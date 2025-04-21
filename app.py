@@ -13,3 +13,7 @@ def load_json(filepath, default={}):
 def prosto():
     q=0
     return q
+
+def save_json(filepath, data):
+    with open(filepath, 'w') as f:
+        json.dump(data, f, indent=4)
