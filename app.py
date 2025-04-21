@@ -2,3 +2,4 @@ from flask import Flask, render_template, request, redirect, url_for, session, f
 import json, os
 from functools import wraps
 app = Flask(__name__)
+app.secret_key = 'secret_key_here'
